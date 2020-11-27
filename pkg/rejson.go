@@ -1,14 +1,16 @@
 package rejson
 
 import (
-	"github.com/nitishm/go-rejson/rjs"
+	"github.com/dutronlabs/go-rejson/pkg/rjs"
 )
 
+// Handler is the client handler, and the Redis client implementation
 type Handler struct {
 	clientName     string
 	implementation ReJSON
 }
 
+// NewReJSONHandler is a constructor that returns the Handler
 func NewReJSONHandler() *Handler {
 	return &Handler{clientName: rjs.ClientInactive}
 }

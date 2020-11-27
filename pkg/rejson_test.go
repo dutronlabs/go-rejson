@@ -1,11 +1,10 @@
-package rejson
+package rejson_test
 
 import (
 	"encoding/json"
-	"github.com/nitishm/go-rejson/rjs"
+	"github.com/dutronlabs/go-rejson/pkg/rjs"
 	"reflect"
 	"testing"
-
 	goredis "github.com/go-redis/redis/v7"
 	redigo "github.com/gomodule/redigo/redis"
 )
